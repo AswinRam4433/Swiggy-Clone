@@ -66,29 +66,27 @@
                 text-align: center;
                 justify-items: stretch;
 
-                padding: 14px 16px;
+                padding: 14px 16px 14px 16px;
                 text-decoration: none;
                 font-size: 17px;
                 margin:0px 0px 0px 0px;
+                
             }
 
             .topnav a:hover {
-                background-color: #ddd;
+                background-color:darkorange;
                 color: black;
                 margin:0px 0px 0px 0px;
+
             }
 
-            .topnav a.active {
-                background-color: #04AA6D;
-                color: white;
-                margin:0px 0px 0px 0px;
-            }
+            
 
             .topnav .icon {
                 display: none;
             }
             .Username{
-                align-self:flex-end;
+                align-self:flex-start;
             }
 
         @media screen and (max-width: 600px) {
@@ -112,6 +110,7 @@
             text-align: left;
   }
             }
+        
 </style>
 </head>
 
@@ -139,8 +138,6 @@ function myFunction() {
         <a>Help</a>
         <a>First</a>
         <a>Cart</a>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-        <i class="fa fa-bars"></i></a>
         <a class="Username">Welcome:First</a>
   
         </div>
