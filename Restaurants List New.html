@@ -31,7 +31,7 @@
             .swiggylogoleft{
                 height:45px;
                 width:45px;
-                padding:0px;
+                padding:2px;
                 margin-top:-15px;
                 margin-bottom:-15px;
                 display: block;
@@ -60,7 +60,7 @@
             }
             .topnav {
                 overflow: hidden;
-                background-color: #333;
+                background-color:rgb(124, 109, 109);
                 margin:0px 0px 0px 0px;
             }
 
@@ -129,13 +129,66 @@
         .grey-discounts img{
             height:260px;
             width:260px;
+            transition: 0.6s;
+
         }
         .grey-discounts img:hover{
-            transform:scale(1.05) translateY(-1px);
             box-shadow: 3px 10px #454a61;
+            transform:scale(1.05);
+
+
 
 
         }
+        .hotel-list{
+            margin-top: 10px;
+            padding: 20px 20px 57px 20px;
+            box-sizing: border-box;
+            display:flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-items: center;
+            justify-content:space-around;
+
+        }
+        .hotels{
+            padding: 20px 20px 57px;
+            border: 1px solid #fff;
+            
+
+        }
+        .hotels-name{
+            font-family: ProximaNova,Arial,Helvetica Neue,sans-serif;
+            letter-spacing: 0;
+            font-size: 20px;
+            text-overflow: ellipsis;
+            font-weight: 500;
+            word-break: break-word;
+            color:black;
+            text-transform: capitalize;
+            padding-bottom: 5px;
+            text-emphasis-style:strong;
+        }
+        .hotels-details{
+            color: #686b78;
+            font-size: 17px;
+            margin-top: 4px;
+            font-weight: 300;
+            font-family: ProximaNova,Arial,Helvetica Neue,sans-serif;
+            letter-spacing: 0;
+        }
+        .hotel-image{
+            height:204px;
+            width:350px;
+
+            border: black;
+            border-radius: 20%;
+            border-width: 1px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
 
     
 </style>
@@ -159,22 +212,98 @@ function myFunction() {
     <body>
         <div class="topnav" id="myTopnav">
 
-        <a><img src="SwiggyLogo.png" class="swiggylogoleft"></a>
+        <a ><img src="SwiggyLogo.png" class="swiggylogoleft"></a>
         <a>Search</a>
         <a>Offers</a>
         <a>Help</a>
         <a>First</a>
         <a>Cart</a>
-        <a class="Username" id="pushright">Welcome:First</a>
+        / <a class="Username" id="pushright">Welcome:First</a> */
   
         </div>
         <div class="grey-discounts">
-            <a><img src="60percent.jpg" alt="60% discount"></a>
-            <a><img src="cake.jpg" alt="Desserts"></a>
-            <a><img src="juice.jpg" alt="Juice Shops"></a>
-            <a><img src="north.jpg" alt="North Indian Food"></a>
+            <a href="" target="_blank"><img src="60percent.jpg" alt="60% discount"></a>
+            <a href="" target="_blank"><img src="cake.jpg" alt="Desserts"></a>
+            <a href="" target="_blank"><img src="juice.jpg" alt="Juice Shops"></a>
+            <a href="" target="_blank"><img src="north.jpg" alt="North Indian Food"></a>
             
-          </div>
+        </div>
+        <nav class="hotel-list">
+            <div class="hotels">
+                <img src="ParvatiBhawan.jpg" class="hotel-image" alt="Parvati Bhawan Pic"><br>
+                <a class="hotels-name">Parvati Bhawan Sweets</a><br>
+                <a class="hotels-details">Sweets,Snacks,Chats,Juices</a><br>
+                <a class="hotels-details" style="color:brown;font-size: 14px;">Follows All Covid Safety Measures</a><br>
+            </div>
+            <div class="hotels">
+                <img src="starbucks.jpg" class="hotel-image" alt="Starbucks"><br>
+                <a class="hotels-name">Starbucks</a><br>
+                <a class="hotels-details">Beverages,Snacks,Cakes</a><br>
+                <a class="hotels-details" style="color:brown;font-size: 14px;">Follows All Covid Safety Measures</a><br>
+            </div>
+            <div class="hotels">
+                <img src="ssbiryani.jpg" class="hotel-image" alt="SS Biryani"><br>
+                <a class="hotels-name">SS Biryani</a><br>
+                <a class="hotels-details">Biryani,Tandoori</a><br>
+                <a class="hotels-details" style="color:brown;font-size: 14px;">Follows All Covid Safety Measures</a><br>
+            </div>
+            <div class="hotels">
+                <img src="pizzahut.jpg" class="hotel-image" alt="Pizzahut"><br>
+                <a class="hotels-name">Pizzahut</a><br>
+                <a class="hotels-details">Pizzas,Fast Food</a><br>
+                <a class="hotels-details" style="color:brown;font-size: 14px;">Follows All Covid Safety Measures</a><br>
+            </div>
+            <div class="hotels">
+                <img src="lassi.jpg" class="hotel-image" alt="The Lassi Shop"><br>
+                <a class="hotels-name">The Lassi Shop</a><br>
+                <a class="hotels-details">Lassis,Shakes,Juices,Snacks</a><br>
+                <a class="hotels-details" style="color:brown;font-size: 14px;">Follows All Covid Safety Measures</a><br>
+            </div>
+            <div class="hotels">
+                <img src="redbox.jpg" class="hotel-image" alt="Red Box"><br>
+                <a class="hotels-name">Red Box</a><br>
+                <a class="hotels-details">Authentic Chinese,Fusion</a><br>
+                <a class="hotels-details" style="color:brown;font-size: 14px;">Follows All Covid Safety Measures</a><br>
+            </div>
+            
+            
+            <div class="hotels">
+                <img src="greamsfruit.jpg" class="hotel-image" alt="Greans Road Fruit shop"><br>
+                <a class="hotels-name">Fruit Shop On Greams Road</a><br>
+                <a class="hotels-details">Fresh Juices,Shakes</a><br>
+                <a class="hotels-details" style="color:brown;font-size: 14px;">Follows All Covid Safety Measures</a><br>
+            </div>
+            <div class="hotels">
+                <img src="dominos.jpg" class="hotel-image" alt="Dominos"><br>
+                <a class="hotels-name">Dominos Pizza</a><br>
+                <a class="hotels-details">Pizzas,Fast Food</a><br>
+                <a class="hotels-details" style="color:brown;font-size: 14px;">Follows All Covid Safety Measures</a><br>
+            </div>
+            <div class="hotels">
+                <img src="drunken.jpg" class="hotel-image" alt="Drunken Monkey"><br>
+                <a class="hotels-name">Drunken Monkey</a><br>
+                <a class="hotels-details">Juices,Shakes,Snacks</a><br>
+                <a class="hotels-details" style="color:brown;font-size: 14px;">Follows All Covid Safety Measures</a><br>
+            </div>
+            <div class="hotels">
+                <img src="ibaco.jpg" class="hotel-image" alt="Ibaco Cakes"><br>
+                <a class="hotels-name">Ibaco</a><br>
+                <a class="hotels-details">Cakes,Ice-Creams</a><br>
+                <a class="hotels-details" style="color:brown;font-size: 14px;">Follows All Covid Safety Measures</a><br>
+            </div>
+            <div class="hotels">
+                <img src="anjappar.jpg" class="hotel-image" alt="Anjappar"><br>
+                <a class="hotels-name">Anjappar</a><br>
+                <a class="hotels-details">Chettinad,Chinese,Grills</a><br>
+                <a class="hotels-details" style="color:brown;font-size: 14px;">Follows All Covid Safety Measures</a><br>
+            </div>
+            <div class="hotels">
+                <img src="saravana bhavan.jpg" class="hotel-image" alt="Saravana Bhavan"><br>
+                <a class="hotels-name">Saravana Bhavan</a><br>
+                <a class="hotels-details">South Indian,Continental</a><br>
+                <a class="hotels-details" style="color:brown;font-size: 14px;">Follows All Covid Safety Measures</a><br>
+            </div>
+        </nav>
 </body>
 
 </html>
