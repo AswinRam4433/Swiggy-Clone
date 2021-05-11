@@ -29,9 +29,11 @@
             }
             
             .swiggylogoleft{
-                height:40px;
-                width:40px;
-                padding: 2px 3.5px 2px 3px;
+                height:45px;
+                width:45px;
+                padding:0px;
+                margin-top:-15px;
+                margin-bottom:-15px;
                 display: block;
                 /* display: flex; */
                 align-self: flex-start;
@@ -53,6 +55,9 @@
                 text-decoration:none;
             }
 
+            #pushright{
+                margin-left:800px;
+            }
             .topnav {
                 overflow: hidden;
                 background-color: #333;
@@ -65,11 +70,12 @@
                 color: #f2f2f2;
                 text-align: center;
                 justify-items: stretch;
-
+                height:50px;
                 padding: 14px 16px 14px 16px;
                 text-decoration: none;
                 font-size: 17px;
                 margin:0px 0px 0px 0px;
+
                 
             }
 
@@ -84,9 +90,11 @@
 
             .topnav .icon {
                 display: none;
+
             }
             .Username{
                 align-self:flex-start;
+                
             }
 
         @media screen and (max-width: 600px) {
@@ -110,7 +118,26 @@
             text-align: left;
   }
             }
-        
+        .grey-discounts{
+            height: 340px;
+            width:100%;
+            background-color: #282c3f;
+            display:flex;
+            justify-content:space-around;
+            align-items:center;
+        }
+        .grey-discounts img{
+            height:260px;
+            width:260px;
+        }
+        .grey-discounts img:hover{
+            transform:scale(1.05) translateY(-1px);
+            box-shadow: 3px 10px #454a61;
+
+
+        }
+
+    
 </style>
 </head>
 
@@ -138,11 +165,14 @@ function myFunction() {
         <a>Help</a>
         <a>First</a>
         <a>Cart</a>
-        <a class="Username">Welcome:First</a>
+        <a class="Username" id="pushright">Welcome:First</a>
   
         </div>
-        <div style="padding-left:16px">
-            <h2>Restaurants List Page</h2>
+        <div class="grey-discounts">
+            <a><img src="60percent.jpg" alt="60% discount"></a>
+            <a><img src="cake.jpg" alt="Desserts"></a>
+            <a><img src="juice.jpg" alt="Juice Shops"></a>
+            <a><img src="north.jpg" alt="North Indian Food"></a>
             
           </div>
 </body>
