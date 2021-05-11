@@ -104,96 +104,98 @@
                 
             }
 
-        @media screen and (max-width: 600px) {
+            @media screen and (max-width: 600px) {
                 .topnav a:not(:first-child) {display: none;}
                 .topnav a.icon {
                 float: right;
                 display: block;
-  }
+    }
             }
 
-        @media screen and (max-width: 600px) {
+            @media screen and (max-width: 600px) {
             .topnav.responsive {position: relative;}
             .topnav.responsive .icon {
-            position: absolute;
-            right: 0;
-            top: 0;
-  }
-        .topnav.responsive a {
-            float: none;
-            display: block;
-            text-align: left;
-            font-family: Helvetica,sans-serif;
-            font-style: normal;
-            text-transform: uppercase;
-  }
+                position: absolute;
+                right: 0;
+                top: 0;
+                }
+            .topnav.responsive a {
+                float: none;
+                display: block;
+                text-align: left;
+                font-family: Helvetica,sans-serif;
+                font-style: normal;
+                text-transform: uppercase;
+                }
             }
-        .grey-discounts{
-            height: 340px;
-            width:100%;
-            background-color: #282c3f;
-            display:flex;
-            justify-content:space-around;
-            align-items:center;
+            /*These braces given above are correct.Dont mess with them */
+            .grey-discounts{
+                height: 340px;
+                width:100%;
+                 background-color: #282c3f;
+                display:flex;
+                justify-content:space-around;
+                align-items:center;
         }
-        .grey-discounts img{
-            height:260px;
-            width:260px;
-            transition: 0.6s;
-
-        }
-        .grey-discounts img:hover{
-            box-shadow: 3px 10px #454a61;
-            transform:scale(1.05);
-
-
-
+            .grey-discounts img{
+                height:260px;
+                width:260px;
+                transition: 0.6s;
 
         }
-        .hotel-list{
-            margin-top: 10px;
-            padding: 20px 20px 57px 20px;
-            box-sizing: border-box;
-            display:flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            align-items: center;
-            justify-items: center;
-            justify-content:space-around;
+            .grey-discounts img:hover{
+                box-shadow: 3px 10px #454a61;
+                transform:scale(1.05);
+
+
+
 
         }
-        .hotels{
-            padding: 22px 22px 57px 22px;
-            border: 1px solid #fff;
-            margin:3px;
+            .hotel-list{
+                margin-top: 10px;
+                padding: 20px 20px 57px 20px;
+                box-sizing: border-box;
+                display:flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-items: center;
+                justify-content:space-around;
+
+        }
+            hotels{
+                padding: 22px 22px 58px 22px;
+                border: 1px solid #fff;
+                margin:3px;
             
 
         }
-        .hotels:hover{
-            background-color: rgb(247, 239, 239);
-            font-size:110%
+            .hotels:hover{
+                background-color: rgb(247, 239, 239);
+                font-size:110%
         }
-        .hotels-name{
-            font-family: ProximaNova,Arial,Helvetica Neue,sans-serif;
-            letter-spacing: 0;
-            font-size: 20px;
-            text-overflow: ellipsis;
-            font-weight: 500;
-            word-break: break-word;
-            color:black;
-            text-transform: capitalize;
-            padding-bottom: 5px;
-            text-emphasis-style:strong;
+            .hotels-name{
+                font-family: ProximaNova,Arial,Helvetica Neue,sans-serif;
+                letter-spacing: 0;
+                font-size: 20px;
+                text-overflow: ellipsis;
+                font-weight: 500;
+                word-break: break-word;
+                color:black;
+                text-transform: capitalize;
+                padding-bottom: 5px;
+                text-emphasis-style:strong;
         }
-        .hotels-details{
+            .hotels-details{
             color: #313b64;
             font-size: 17px;
             margin-top: 4px;
-            font-weight: 300;
+            font-weight: 500;
             font-family: ProximaNova,Arial,Helvetica Neue,sans-serif;
             letter-spacing: 0;
+            
         }
-        .hotel-image{
+            .hotel-image{
             height:204px;
             width:350px;
 
@@ -204,17 +206,63 @@
             margin-right: auto;
             transition:1.3s;
         }
-        .hotel-image:hover{
+            .hotel-image:hover{
             border-color: dimgrey;
             border-width: 20px;
             transform:scale(1.05);
-
-
-
+        
+        }
+        
+            .tooltip {
+            position: relative;
+            display: inline-block;
+            text-align: center;
+            border-bottom: 1px dotted black;
         }
 
+            .tooltip .tooltiptext {
+            visibility: hidden;
+            width: 120px;
+            background-color: black;
+            color: #fff;
+            text-align: center;
+            border-radius: 6px;
+            padding: 5px 0;
+            position: absolute;
+            z-index: 1;
+            top: -5px;
+            left: 60%;
+            font-size: small;
+        }
 
-    
+        .tooltip .tooltiptext::after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            right: 100%;
+            margin-top: -5px;
+            border-width: 5px;
+            border-style: solid;
+            border-color: transparent black transparent transparent;
+            /* Each side of the border has one colour */
+        }
+        .tooltip:hover .tooltiptext {
+            visibility: visible;
+        }
+        .CovidInfo{
+            width:100%;
+            margin-left: 0px;
+            margin-right:0px;
+            padding:20px 5px;
+            background-color:darkorange;
+            color:black;
+            text-emphasis:inherit;
+            font-weight: 600;
+            font-family:bookman,arial;
+            font-size: larger;
+            height:auto;
+        }
+        
 </style>
 </head>
 
@@ -251,11 +299,14 @@ function myFunction() {
             <a href="" target="_blank"><img src="north.jpg" alt="North Indian Food"></a>
             
         </div>
+        <div class="CovidInfo tooltip">Swiggy Guaranteed Safety
+            <span class="tooltiptext">All surfaces are sanitised thoroughly and staff undergo temperature checks at regular intervals</span>
+        </div>
         <nav class="hotel-list">
             <div class="hotels">
                 <img src="ParvatiBhawan.jpg" class="hotel-image" alt="Parvati Bhawan Pic"><br>
                 <a class="hotels-name">Parvati Bhawan Sweets</a><br>
-                <a class="hotels-details">Sweets,Snacks,Chats,Juices</a><br>
+                <a class="hotels-details ">Sweets,Snacks,Chats,Juices</a><br>
                 <a class="hotels-details" style="color:brown;font-size: 14px;">Follows All Covid Safety Measures</a><br>
             </div>
             <div class="hotels">
