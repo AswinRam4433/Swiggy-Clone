@@ -193,6 +193,56 @@
 
 
         }
+        
+        .tooltip {
+            position: relative;
+            display: inline-block;
+            text-align: center;
+            border-bottom: 1px dotted black;
+        }
+
+            .tooltip .tooltiptext {
+            visibility: hidden;
+            width: 120px;
+            background-color: black;
+            color: #fff;
+            text-align: center;
+            border-radius: 6px;
+            padding: 5px 0;
+            position: absolute;
+            z-index: 1;
+            top: -5px;
+            left: 60%;
+            font-size: small;
+        }
+
+        .tooltip .tooltiptext::after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            right: 100%;
+            margin-top: -5px;
+            border-width: 5px;
+            border-style: solid;
+            border-color: transparent black transparent transparent;
+            /* Each side of the border has one colour */
+        }
+        .tooltip:hover .tooltiptext {
+            visibility: visible;
+        }
+        .CovidInfo{
+            width:100%;
+            margin-left: 0px;
+            margin-right:0px;
+            padding:20px 5px;
+            background-color:darkorange;
+            color:black;
+            text-emphasis:inherit;
+            font-weight: 600;
+            font-family:bookman,arial;
+            font-size: larger;
+            height:auto;
+        }
 
 
     
@@ -209,6 +259,9 @@ function myFunction() {
 }
 </script>
     <body>
+        <div class="CovidInfo tooltip">Swiggy Guaranteed Safety
+            <span class="tooltiptext">All surfaces are sanitised thoroughly and staff undergo temperature checks at regular intervals</span>
+        </div>
         <div class="topnav" id="myTopnav">
         <a ><img src="SwiggyLogo.png" class="swiggylogoleft"></a>
         <a>Search</a>
