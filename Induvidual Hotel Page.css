@@ -172,7 +172,8 @@ footer div nav a img:hover{
   font-weight: 300;
   font-family: ProximaNova,Arial,Helvetica Neue,sans-serif;
   letter-spacing: 0;
-  line-height: 1.2;
+  line-height: 1.5;
+  margin:20px;
   
 }
 .hotelOverview h2{
@@ -185,3 +186,15 @@ footer div nav a img:hover{
   font-size: 18px;
 
 }
+/*
+.header .safetyIcons{
+  display:flex;
+  width:max-content;
+  height: 80%;
+  align-items:center;
+  justify-content: space-around;
+  flex-direction:row;
+  flex-wrap: wrap;
+
+}
+*/
