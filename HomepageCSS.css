@@ -46,6 +46,8 @@
             background-color:rgb(124, 109, 109);
             color:white;
             margin:0px 0px 0px 0px;
+            display: flex;
+            align-items:center;
         }
             
 
@@ -255,4 +257,5 @@
             transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
             transform:scale(1.2);
         }
+        
 

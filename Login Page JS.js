@@ -1,9 +1,7 @@
 // - - - - -  Variables - - - - - //
 
-// Wrapper Area
 const wrapper__Area = document.querySelector('#wrapper_Area');
 
-// Login & Sing-Up Forms
 const loginForm = document.querySelector('#loginForm');
 const signUpForm = document.querySelector('#signUpForm');
 
@@ -11,11 +9,9 @@ const signUpForm = document.querySelector('#signUpForm');
 const allLoginFormFields = Array.from(document.querySelectorAll('#loginForm .input__group .field input'));
 const allSignUpFormFields = Array.from(document.querySelectorAll('#signUpForm .input__group:not(.confirm__group) .field input'));
 
-// Password And Confirm Password Fileds
 const passwordField = document.querySelector('#signUpPassword');
 const confirmPassword = document.querySelector('#signUpConfirmPassword');
 
-// Login % Sign-Up Submit Buttons
 const loginFormSubmitBtn = document.querySelector('#loginSubmitBtn');
 const signUpFormSubmitBtn = document.querySelector('#signUpSubmitBtn');
 
@@ -39,16 +35,15 @@ const aside__SignIn_Button = document.querySelector('#aside_signIn_Btn');
 // - - - - -  Events - - - - - //
 
 // When Submitting On Login & Sign-Up Forms
+
+// Stop Form Submission
+// Call Sign-Up  nd Sign-In Form Validation Function
 loginForm.addEventListener('submit', (e) => {
-  // Stop Form Submission
   e.preventDefault();
-  // Call Login Form Validation Function
   loginFormValidation();
 });
 signUpForm.addEventListener('submit', (e) => {
-  // Stop Form Submission
   e.preventDefault();
-  // Call Sign-Up Form Validation Function
   signUpFormValidation();
 });
 
@@ -59,20 +54,18 @@ aside__Area.addEventListener('click', chnageFormMode);
 // - - - - -  Functions - - - - - //
 
 // Change Form Mode Function
+//This function checks if we have clicked either of the buttons on the aside area and takes appropriate action by using the event listener and functiion
 function chnageFormMode(e) {
-  // Check. If The Target Element Is Aside Sign-Up Button
   if(e.target === aside__SignUp_Button){
-    // Add Class [ Sign Up Mode Active ] On Wrapper Area
     wrapper__Area.classList.add('sign-up__Mode-active');
   };
-  // Check. If The Target Element Is Aside Sign-In Button
   if(e.target === aside__SignIn_Button){
-    // Remove Class [ Sign Up Mode Active ] From Wrapper Area
     wrapper__Area.classList.remove('sign-up__Mode-active');
   };
 };
 
 // Function Show Hide Password
+/*
 (function showHidePass() {
   // Loop On All The Show Hide Password Icon
   showHidePassDom.forEach(icon =>{
@@ -95,27 +88,24 @@ function chnageFormMode(e) {
     });
   });
 })();
+*/
 
 // Login Form Validation Function
 function loginFormValidation() {
   // Loop On All The Inputs
   allLoginFormFields.forEach(input => {
-    // Input Targte Field Name Value
     const inputAttribueValueName = input.attributes.name.value;
-    // Input Value Without Spaces
+    // Input Value Without Spaces and use Regex
     const inputValue = input.value.trim();
-    // Input Regex Validation Response [ True || False ] :)
     const inputRegex = patterns[inputAttribueValueName].test(inputValue);
 
-    // Check If The Input Value Is Empty
     if(inputValue === ''){
-      // Call Function Set Error For
+      // If its empty
       setErrorFor(input, `${inputAttribueValueName} is required. Please enter your response.`);
-    }else if(inputRegex === false){ // Else If: If The InputRegext Response Is False
-      // Call Function Set Error For
+    }else if(inputRegex === false){ 
+        // If The InputRegext Response Is False
       setErrorFor(input, `${inputAttribueValueName} Is Invalid .`);
-    }else{ // Else
-      // Call Function Set Success For
+    }else{ // Else its successful
       setSuccessFor(input);
     };
   });
