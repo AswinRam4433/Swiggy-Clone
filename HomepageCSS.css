@@ -232,4 +232,27 @@
         font-size: larger;
         height:auto;
         }
+        footer{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            height:max-content;
+            font-size: large;
+            width: 100%;
+            justify-content: space-between;
+            align-content: space-around;
+            margin: auto;
+            font-family: ProximaNova,Arial,Helvetica Neue,sans-serif;
+            letter-spacing: 0;
+            line-height: 1.2;
+            color: #fff;
+            text-align: center;
+            background-color: black;
+        }
+        footer div nav a img:hover{
+            transition-delay: 0.2s;
+            transition-duration: 1.3s;
+            transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+            transform:scale(1.2);
+        }
 
