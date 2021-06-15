@@ -17,8 +17,11 @@ body {
     font-size: 90px; 
     font-weight: bold;
     position: fixed;
-    top: 0;
+    /*This top attribute depends on height of navigation ribbon.In case you mess this up You wont be able to see nav bar*/
+    top: 50px;
     width: 100%;
+    /*In case sizing goes wrong remove this height property*/
+    height:200px;
     transition: 0.2s;
     /*Actual Formatting Needed for Swiggy-like layout */
     display:flex;
@@ -27,47 +30,24 @@ body {
     justify-content:space-between;
     align-items:center;
   }
+  .swiggylogoleft{
+    height:45px;
+    width:45px;
+    padding:2px;
+    margin-top:-15px;
+    margin-bottom:-15px;
+    display: block;
+    /* display: flex; */
+    align-self: flex-start;
+    
+}
 
   #headerImage{
     height:204px;
     width:350px;
+    transform: scale(0.8);
   }
-  .topnav {
-    overflow: hidden;
-    background-color:rgb(124, 109, 109);
-    color:white;
-    margin:0px 0px 0px 0px;
-    display: flex;
-    align-items:center;
-}
-    
-
-.topnav a {
-    float: left;
-    display: block;
-    color: #f2f2f2;
-    text-align: center;
-    justify-items: stretch;
-    height:50px;
-    padding: 14px 16px 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-    margin:0px 0px 0px 0px;
-    font-family: Helvetica,sans-serif;
-    font-size: x-large;
-    font-style: normal;
-    text-transform: uppercase;
-}
-    
-.topnav a:hover {
-    background-color:darkorange;
-    color: black;
-    margin:0px 0px 0px 0px;
-}
-
-.topnav .icon {
-    display: none;
-}
+  
 @media screen and (max-width: 600px) {
   .topnav a:not(:first-child) {display: none;}
   .topnav a.icon {
@@ -174,6 +154,7 @@ footer div nav a img:hover{
   letter-spacing: 0;
   line-height: 1.5;
   margin:20px;
+
   
 }
 .hotelOverview h2{
@@ -210,4 +191,40 @@ footer div nav a img:hover{
   height:60px;
   width:auto;
   margin-right: 40px;
+}
+.topnav {
+  overflow: hidden;
+  background-color:rgb(124, 109, 109);
+  color:white;
+  margin:0px 0px 0px 0px;
+  display: flex;
+  align-items:center;
+}
+  
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  justify-items: stretch;
+  height:50px;
+  padding: 14px 16px 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  margin:0px 0px 0px 0px;
+  font-family: Helvetica,sans-serif;
+  font-size: x-large;
+  font-style: normal;
+  text-transform: uppercase;
+}
+  
+.topnav a:hover {
+  background-color:darkorange;
+  color: black;
+  margin:0px 0px 0px 0px;
+}
+
+.topnav .icon {
+  display: none;
 }
