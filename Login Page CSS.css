@@ -304,9 +304,16 @@
     justify-content: space-around;
     margin-top: 40px;
   }
-  .sign-up__form .alternate-login{ /* Sign Up Alternate Login */
+  
+  /* Sign Up Alternate Login */
+  /*
+  .sign-up__form .alternate-login{ 
     margin-top: 25px;
   }
+  */
+
+  
+  /*
   .alternate-login .link{
     border: 2px solid var(--primary-light-gray);
     margin: 10px;
@@ -325,6 +332,7 @@
     position: relative;
     top: 2px;
   }
+  */
   /* Forms Animation */
   
   /* When Sign Up Mode Is Active\ Sign Up Form */
