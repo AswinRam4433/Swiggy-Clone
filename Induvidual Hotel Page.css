@@ -189,7 +189,6 @@ footer div nav a img:hover{
 /*
 .header .safetyIcons{
   display:flex;
-  width:max-content;
   height: 80%;
   align-items:center;
   justify-content: space-around;
@@ -198,3 +197,15 @@ footer div nav a img:hover{
 
 }
 */
+.header .safetyIcons{
+
+  height: 80%;
+  align-items:center;
+  
+
+}
+.header .safetyIcons img{
+
+  height:55px;
+  width:auto;
+}
