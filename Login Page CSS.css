@@ -256,6 +256,7 @@
     transform: rotate(45deg) scale(1);
   }
   /* Forgot Password */
+  /*
   .form__actions .forgot_password{
     position: relative;
     top: 4px;
@@ -265,6 +266,7 @@
     transition: 0.3s ease-in-out;
     font-weight: 550;
   }
+  */
   
   /* Submit Button */
   button.submit-button{

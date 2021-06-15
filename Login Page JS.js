@@ -1,9 +1,3 @@
-// Hello Everyone.
-// This Is A Simple App Login Sing Up From Validation.
-// I Hope You Like It And i tried To Make The JavaScript Code  is simple 
-// See You Guys In Next Project :)
-// Thanks.
-
 // - - - - -  Variables - - - - - //
 
 // Wrapper Area
