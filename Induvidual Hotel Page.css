@@ -179,6 +179,7 @@ footer div nav a img:hover{
 .hotelOverview h2{
   opacity:1;
   color: rgb(255,255,255);
+  font-size:30px;
 }
 .hotelOverview .cost{
   opacity:1;
@@ -204,8 +205,9 @@ footer div nav a img:hover{
   
 
 }
-.header .safetyIcons img{
+.safetyIcons img{
 
-  height:55px;
+  height:60px;
   width:auto;
+  margin-right: 40px;
 }
