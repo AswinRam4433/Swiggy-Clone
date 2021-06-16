@@ -1,6 +1,7 @@
 body { 
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
+    transition: transform .2s ease-in-out,background-color .2s ease-in-out,color .2s ease-in-out;
   }
   
   #header {
@@ -19,6 +20,7 @@ body {
     position: fixed;
     /*This top attribute depends on height of navigation ribbon.In case you mess this up You wont be able to see nav bar*/
     top: 50px;
+    /*CHANGED THIS TO CHECK IF CSS ACTUALLY REFLECTS IN HTML*/
     width: 100%;
     /*In case sizing goes wrong remove this height property*/
     height:200px;
