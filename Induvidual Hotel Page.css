@@ -1,3 +1,4 @@
+
 body { 
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
@@ -31,6 +32,7 @@ body {
     flex-wrap:wrap;
     justify-content:space-between;
     align-items:center;
+    box-sizing: content-box;
   }
   .swiggylogoleft{
     height:45px;
@@ -138,6 +140,8 @@ text-transform: uppercase;
     color: #fff;
     text-align: center;
     background-color: black;
+    /* position:fixed;
+    bottom:0; */
 }
 footer div nav a img:hover{
     transition-delay: 0.2s;
@@ -229,4 +233,28 @@ footer div nav a img:hover{
 
 .topnav .icon {
   display: none;
+}
+.column-layout{
+  margin-top:200px;
+  padding:15px 15px 2500px;
+  font-size:30px
+}
+/* Trying out the 3 column layout */
+* {
+  box-sizing: border-box;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
