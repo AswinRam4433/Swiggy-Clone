@@ -247,9 +247,11 @@ footer div nav a img:hover{
 /* Create three equal columns that floats next to each other */
 .column {
   float: left;
-  width: 33.33%;
+  width: 50%;
   padding: 10px;
-  height: 300px; /* Should be removed. Only for demonstration */
+  /* height: 300px; Should be removed. Only for demonstration */
+  height:fit-content;
+  
 }
 
 /* Clear floats after the columns */
@@ -257,4 +259,24 @@ footer div nav a img:hover{
   content: "";
   display: table;
   clear: both;
+}
+.right {
+  width: 35%;
+  background-color:rgba(255,255,255,0.9);
+}
+
+.middle {
+  width: 65%; 
+  background-color:rgba(141, 137, 137, 0.445);
+}
+.menu{
+  width:100%;
+  display:flex;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  -webkit-text-size-adjust: 100%;
+  font-family: ProximaNova,Arial,Helvetica Neue,sans-serif;
+  letter-spacing: 0;
+  font-weight: 300;
+  color: #282c3f;
 }
