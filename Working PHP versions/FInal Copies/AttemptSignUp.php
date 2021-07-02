@@ -58,7 +58,7 @@
         
         <!-- Login Button -->
         <button type="submit" class="submit-button" id="loginSubmitBtn" name="SignUp">Sign Up</button>
-            <!-- <?php   
+            <?php   
                     $servername = "localhost";
                     $usernamedb = "root";
                     $passworddb = "";
@@ -83,7 +83,7 @@
                     $confirm=stripcslashes($confirm);
 
 
-                    $sql = "SELECT *FROM users WHERE UNAME = '{$username}' OR MAIL='{$mail}'"; 
+                    $sql = "SELECT * FROM users WHERE UNAME = '$username' OR MAIL='$mail'"; 
                     $result = mysqli_query($conn, $sql);  
                     $row = mysqli_fetch_array($result, MYSQLI_ASSOC);  
                     $count = mysqli_num_rows($result);
@@ -99,8 +99,9 @@
                             if($password == $confirm){
                             
                                     if($count == 0){  
-                                        $sqla = "INSERT INTO users (UNAME,MAIL,PASSW) VALUES ('{$username}', '{$mail}', '{$password}')";
-                                        if(mysqli_query($sqla)){
+                                        $sqla = "INSERT INTO users (UNAME,MAIL,PASSW) VALUES ('$username','$mail','$password')";
+                                        // added $conn
+                                        if(mysqli_query($conn,$sqla)){
                                         echo "<h1> Profile Creation Successful</h1>"; 
                                         echo '<script>alert("Account Created")</script>'; 
                                         }
@@ -116,7 +117,7 @@
                     }   // } brace for checking if both passwords are same
                     
                 mysqli_close($conn);   
-            ?>  -->
+            ?> 
                 <?php
                         
                     $showAlert = false; 
@@ -172,8 +173,10 @@
                                 $sql = "INSERT INTO `users` ( `username`, 
                                     `password`, `date`) VALUES ('$username', 
                                     '$hash', current_timestamp())";
+                                $sqla = "INSERT INTO users (UNAME,MAIL,PASSW) VALUES ('$username','$mail','$password')";
                         
-                                $result = mysqli_query($conn, $sql);
+                                // $result = mysqli_query($conn, $sql);
+                                $resulta=$conn->query($sqla);
                         
                                 if ($result) {
                                     $showAlert = true; 
@@ -212,11 +215,6 @@
                         echo ' <div class="alert alert-danger 
                             alert-dismissible fade show" role="alert"> 
                         <strong>Error!</strong> '. $showError.'
-                    
-                    <button type="button" class="close" 
-                            data-dismiss="alert aria-label="Close">
-                            <span aria-hidden="true">×</span> 
-                    </button> 
                     </div> '; 
                 }
                         
@@ -225,10 +223,6 @@
                             alert-dismissible fade show" role="alert">
                     
                         <strong>Error!</strong> '. $exists.'
-                        <button type="button" class="close" 
-                            data-dismiss="alert" aria-label="Close"> 
-                            <span aria-hidden="true">×</span> 
-                        </button>
                     </div> '; 
                     }
    
