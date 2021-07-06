@@ -100,6 +100,7 @@
                                             //     <span class="DishPrice">'.$row["PRICE"].'</span>
                                             // <div>';
                                             $imageofdish=$row["PIC"].".jpg";
+                                            
                                             // echo `<img src="{$imageofdish}">`;
                                             // echo '<img src=" '. $imageofdish .' ">';
                                             
@@ -115,6 +116,7 @@
                                                     
                                                             
                                                             <a class="hotels-details" style="color:brown;font-size: 14px;"><input type="checkbox"  name="cart[]" value="'.$row["DISHNAME"].'"></a><br>
+                                                            <a class="hotels-details" style="color:brown;font-size: 14px;"><input type="number"  name="qty[]" value="'.$row["DISHNAME"].'"></a><br>
                                                             
                                                     
                                                 </div>
@@ -132,11 +134,14 @@
                         
                                                 // Create connection
                                                 $aconn = mysqli_connect($servername, $username, $password, $dbname);
+                                                    $i=0;
                                                 
                                                     foreach($_POST["cart"] as $item){
                                                         // echo $item;
-                                                        $asql="INSERT INTO cart(DESCR) VALUES ('.$item.')";
+                                                        $q=$_POST["qty"];
+                                                        $asql="INSERT INTO cart(DESCR,QUANTITY) VALUES ('".$item."','".$q[$i]."')";
                                                         $aresult=$aconn->query($asql);
+                                                        $i+=1;
                                                         
                                                     }
                                                     
