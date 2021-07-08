@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Order Food</title>
         <link rel="icon" href="SwiggyLogo.png" sizes="16x16" type="image/png">
-        <meta name="description" content="">
+        <meta name="description" content="Swiggy Project">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="HomepageCSS.css">
         <!--
@@ -266,10 +266,10 @@ function myFunction() {
         </div>
         <div class="topnav top-flex" id="myTopnav">
             <a ><img src="SwiggyLogo.png" class="swiggylogoleft"></a>
-            <a>Search</a>
-            <a>Offers</a>
-            <a>Help</a>
-            <a>Cart</a>
+            
+            <a id="OffersButton">Offers</a>
+            
+            <a id="NavCartButton">Cart</a>
         <!--  <a class="Username" id="pushright">Welcome:First</a>  -->
   
         </div>
@@ -281,37 +281,37 @@ function myFunction() {
             
         </div>
         <nav class="hotel-list">
-            <div class="hotels">
+            <div class="hotels" id="Parvatihotel">
                 <img src="ParvatiBhawan.jpg" class="hotel-image" alt="Parvati Bhawan Pic"><br>
                 <a class="hotels-name">Parvati Bhawan Sweets</a><br>
                 <a class="hotels-details">Sweets,Snacks,Chats,Juices</a><br>
                 <a class="hotels-details" style="color:brown;font-size: 14px;">Follows All Covid Safety Measures</a><br>
             </div>
-            <div class="hotels">
+            <div class="hotels" id="Starbuckshotel">
                 <img src="starbucks.jpg" class="hotel-image" alt="Starbucks"><br>
                 <a class="hotels-name">Starbucks</a><br>
                 <a class="hotels-details">Beverages,Snacks,Cakes</a><br>
                 <a class="hotels-details" style="color:brown;font-size: 14px;">Follows All Covid Safety Measures</a><br>
             </div>
-            <div class="hotels">
+            <div class="hotels" id="SShotel">
                 <img src="ssbiryani.jpg" class="hotel-image" alt="SS Biryani"><br>
                 <a class="hotels-name">SS Biryani</a><br>
                 <a class="hotels-details">Biryani,Tandoori</a><br>
                 <a class="hotels-details" style="color:brown;font-size: 14px;">Follows All Covid Safety Measures</a><br>
             </div>
-            <div class="hotels">
+            <div class="hotels" id="Pizzahuthotel">
                 <img src="pizzahut.jpg" class="hotel-image" alt="Pizzahut"><br>
                 <a class="hotels-name">Pizzahut</a><br>
                 <a class="hotels-details">Pizzas,Fast Food</a><br>
                 <a class="hotels-details" style="color:brown;font-size: 14px;">Follows All Covid Safety Measures</a><br>
             </div>
-            <div class="hotels">
+            <div class="hotels" id="Lassihotel">
                 <img src="lassi.jpg" class="hotel-image" alt="The Lassi Shop"><br>
                 <a class="hotels-name">The Lassi Shop</a><br>
                 <a class="hotels-details">Lassis,Shakes,Juices,Snacks</a><br>
                 <a class="hotels-details" style="color:brown;font-size: 14px;">Follows All Covid Safety Measures</a><br>
             </div>
-            <div class="hotels">
+            <div class="hotels" id="Redboxhotel">
                 <img src="redbox.jpg" class="hotel-image" alt="Red Box"><br>
                 <a class="hotels-name">Red Box</a><br>
                 <a class="hotels-details">Authentic Chinese,Fusion</a><br>
@@ -319,42 +319,37 @@ function myFunction() {
             </div>
             
             
-            <div class="hotels">
+            <div class="hotels" id="Greamshotel">
                 <img src="greamsfruit.jpg" class="hotel-image" alt="Greans Road Fruit shop"><br>
                 <a class="hotels-name">Fruit Shop On Greams Road</a><br>
                 <a class="hotels-details">Fresh Juices,Shakes</a><br>
                 <a class="hotels-details" style="color:brown;font-size: 14px;">Follows All Covid Safety Measures</a><br>
             </div>
-            <div class="hotels">
+            <div class="hotels" id="Dominoshotel">
                 <img src="dominos.jpg" class="hotel-image" alt="Dominos"><br>
                 <a class="hotels-name">Dominos Pizza</a><br>
                 <a class="hotels-details">Pizzas,Fast Food</a><br>
                 <a class="hotels-details" style="color:brown;font-size: 14px;">Follows All Covid Safety Measures</a><br>
             </div>
-            <div class="hotels">
+            <div class="hotels" id="Drunkenhotel">
                 <img src="drunken.jpg" class="hotel-image" alt="Drunken Monkey"><br>
                 <a class="hotels-name">Drunken Monkey</a><br>
                 <a class="hotels-details">Juices,Shakes,Snacks</a><br>
                 <a class="hotels-details" style="color:brown;font-size: 14px;">Follows All Covid Safety Measures</a><br>
             </div>
-            <div class="hotels">
+            <div class="hotels" id="Ibacohotel">
                 <img src="ibaco.jpg" class="hotel-image" alt="Ibaco Cakes"><br>
                 <a class="hotels-name">Ibaco</a><br>
                 <a class="hotels-details">Cakes,Ice-Creams</a><br>
                 <a class="hotels-details" style="color:brown;font-size: 14px;">Follows All Covid Safety Measures</a><br>
             </div>
-            <div class="hotels">
+            <div class="hotels" id="Anjapparhotel">
                 <img src="anjappar.jpg" class="hotel-image" alt="Anjappar"><br>
                 <a class="hotels-name">Anjappar</a><br>
                 <a class="hotels-details">Chettinad,Chinese,Grills</a><br>
                 <a class="hotels-details" style="color:brown;font-size: 14px;">Follows All Covid Safety Measures</a><br>
             </div>
-            <div class="hotels">
-                <img src="saravana bhavan.jpg" class="hotel-image" alt="Saravana Bhavan"><br>
-                <a class="hotels-name">Saravana Bhavan</a><br>
-                <a class="hotels-details">South Indian,Continental</a><br>
-                <a class="hotels-details" style="color:brown;font-size: 14px;">Follows All Covid Safety Measures</a><br>
-            </div>
+            
         </nav>
         <footer>
             <div>
