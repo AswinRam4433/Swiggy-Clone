@@ -1,0 +1,33 @@
+document.getElementById("Parvatihotel").onclick=function(){
+    window.open("http://localhost/aswinPrograms/Swiggy/Parvati.php","_blank")
+}
+document.getElementById("Starbuckshotel").onclick=function(){
+    window.open("http://localhost/aswinPrograms/Swiggy/Starbucks.php","_blank")
+}
+document.getElementById("SShotel").onclick=function(){
+    window.open("http://localhost/aswinPrograms/Swiggy/Ssbiryani.php","_blank")
+}
+document.getElementById("Pizzahuthotel").onclick=function(){
+    window.open("http://localhost/aswinPrograms/Swiggy/Pizzahut.php","_blank")
+}
+document.getElementById("Lassihotel").onclick=function(){
+    window.open("http://localhost/aswinPrograms/Swiggy/Lassi.php","_blank")
+}
+document.getElementById("Redboxhotel").onclick=function(){
+    window.open("http://localhost/aswinPrograms/Swiggy/Redbox.php","_blank")
+}
+document.getElementById("Greamshotel").onclick=function(){
+    window.open("http://localhost/aswinPrograms/Swiggy/Greams.php","_blank")
+}
+document.getElementById("Dominoshotel").onclick=function(){
+    window.open("http://localhost/aswinPrograms/Swiggy/Dominos.php","_blank")
+}
+document.getElementById("Drunkenhotel").onclick=function(){
+    window.open("http://localhost/aswinPrograms/Swiggy/Drunken.php","_blank")
+}
+document.getElementById("Ibacohotel").onclick=function(){
+    window.open("http://localhost/aswinPrograms/Swiggy/Ibaco.php","_blank")
+}
+document.getElementById("Anjapparhotel").onclick=function(){
+    window.open("http://localhost/aswinPrograms/Swiggy/Anjappar.php","_blank")
+}
