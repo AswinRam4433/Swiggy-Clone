@@ -142,7 +142,7 @@
                                                   
                                                 </div> ';
                                                      
-                                                
+                                                $Total=$Total + ($row['QUANTITY']*$row['PRICE']);
                                                   
                                                   
                                                   
@@ -169,8 +169,11 @@
                   <div class="row layout-inline">
                   <div class="col">
                     <p>Total</p>
+                    <?php
+                  echo'<span class="col" style="color:white;size:20px;">'.$Total.'</span>';
+                  ?>
                   </div>
-                  <div class="col"></div>
+                  
                 </div>
               </div>         
           </div>
