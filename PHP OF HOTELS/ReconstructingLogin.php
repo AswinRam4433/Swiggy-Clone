@@ -10,7 +10,11 @@
     <link rel="icon" href="SwiggyLogo.png" sizes="16x16" type="image/png">
     <!-- <script defer src="LoginPageJS.js"></script> -->
 </head>
-    
+    <script>
+        function SignUpCLick(){
+            window.open("http://localhost/aswinPrograms/Swiggy/AttemptSignUp.php","_self");
+        }
+    </script>
 <body>
     
 <!-- Wrapper Area -->
@@ -64,6 +68,8 @@
           
                 if($count == 1){  
                     echo "<h1> Login successful</h1>";  
+                    sleep(1);
+                    echo'<script>window.open("Working Page.html","_self");</script>';
                 }  
                 else{  
                     echo "<h1> Login failed. Invalid username or password.</h1>";  
@@ -90,7 +96,7 @@
                 <br>
                 Sign-In now to access all the Swiggy goodness
             </p>
-            <button id="aside_signUp_Btn">Sign Up</button>
+            <button id="aside_signUp_Btn" onclick="SignUpClick()">Sign Up</button>
         </div>
         <div class="sign-up__aside-info">
             <h4>Welcome</h4>

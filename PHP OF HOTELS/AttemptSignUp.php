@@ -10,6 +10,11 @@
     <link rel="icon" href="SwiggyLogo.png" sizes="16x16" type="image/png">
     <!-- <script defer src="LoginPageJS.js"></script> -->
 </head>
+<script>
+    function SignUpClick(){
+        window.open("http://localhost/aswinPrograms/Swiggy/ReconstructingLogin.php")
+    }
+</script>
     
 <body>
     
@@ -208,6 +213,8 @@
                                 <span aria-hidden="true">×</span> 
                             </button> 
                         </div> '; 
+                        sleep(3);
+                        echo'<script>window.open("http://localhost/aswinPrograms/Swiggy/ReconstructingLogin.php","_self");</script>';
                     }
                     
                     if($showError) {
@@ -266,7 +273,7 @@
                     Join the Swiggy-verse now
                     
                 </p>
-                <button id="aside_signUp_Btn">Sign In</button>
+                <button id="aside_signUp_Btn" onclick="SignUpClick()">Sign In</button>
            </div>
         </div>
         
